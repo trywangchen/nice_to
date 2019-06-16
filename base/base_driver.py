@@ -10,9 +10,10 @@ def init_driver():
     # app信息
     desired_caps['appPackage'] = 'com.yunmall.lc'
     desired_caps['appActivity'] = 'com.yunmall.ymctoc.ui.activity.MainActivity'
+    desired_caps['automationName'] = 'Uiautomator2'
 
-    desired_caps['unicodeKeyboard'] = True
-    desired_caps['resetKeyboard'] = True
-    desired_caps['noReset'] = True
+    # desired_caps['unicodeKeyboard'] = True
+    # desired_caps['resetKeyboard'] = True
+    # desired_caps['noReset'] = True
 
     return webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
